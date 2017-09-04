@@ -1,0 +1,10 @@
+FROM microsoft/dotnet-framework:4.7
+RUN mkdir C:\installation
+ADD . /installation
+RUN sc create WebAPIHostService start=auto binpath="C:\installation\HostService.exe"
+CMD powershell C:\installation\init.ps1
+EXPOSE 9000
+
+
+
+
