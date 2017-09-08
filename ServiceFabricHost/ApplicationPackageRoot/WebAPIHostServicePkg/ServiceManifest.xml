@@ -15,6 +15,7 @@
     <EntryPoint>
       <!-- Follow this link for more information about deploying Windows containers to Service Fabric: https://aka.ms/sfguestcontainers -->
       <ContainerHost>
+        <!--The image URL should be full URL along with your container registry e.g. abilitycontainerregistry.azurecr.io/pocs/cpmview -->
         <ImageName>[Your container image URL]</ImageName>
       </ContainerHost>
     </EntryPoint>
